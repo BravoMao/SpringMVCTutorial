@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.jianli.Model.Greeting;
+
 
 @RestController
 public class APIController {
@@ -31,7 +33,7 @@ public class APIController {
     }
 
     //using post  
-	@RequestMapping(value="/greetingPost", method=RequestMethod.POST, produces="application/json")
+	@RequestMapping(value="/greetingPost/hello", method=RequestMethod.POST, produces="application/json")
 	@ResponseBody
 	public Greeting  greetingPost(@RequestBody Greeting greeting){
 		
