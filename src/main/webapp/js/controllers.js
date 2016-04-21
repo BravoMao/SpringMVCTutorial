@@ -24,7 +24,7 @@ app.controller('CsrfCtrl', function ($scope, $http) {
 	};
 
 	$scope.testPost = function () {
-		$http.post('/greeting').success(function (result) {
+		$http.post('/api/test').success(function (result) {
 			$scope.result = result;
 		});
 	};
